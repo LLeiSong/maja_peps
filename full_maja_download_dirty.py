@@ -128,7 +128,7 @@ try:
     with open(statusFileName) as f:
         lignes = f.readlines()
         for ligne in lignes:
-            if ligne.find("https://peps.cnes.fr/cgi-bin/mapcache_results/maja/8cd3cfe2-f263-11ea-a8ad-0242ac110002") >= 0:
+            if ligne.find("https://peps.cnes.fr/cgi-bin/mapcache_results/maja/{}".format(wpsId)) >= 0:
                 url = re.search('https:(.+).zip', ligne).group(0)
                 urls.append(url)
 except IOError:
