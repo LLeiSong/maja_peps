@@ -144,5 +144,4 @@ for url in urls:
     else:
         print("downloading %s" % L2AName)
         downloadFile(url, "%s/%s" % (options.write_dir, L2AName), email, passwd)
-    downloadFile(url, "%s/%s" % (options.write_dir, L2AName), email, passwd)
 print("---------------------------------------------------------------------------")
